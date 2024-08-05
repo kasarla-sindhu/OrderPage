@@ -9,51 +9,21 @@ body{
     height: 100vh;
 }
 .nav-con{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
     height: 8vh;
 }
 .nav-items-con{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 55%;
-}
-.nav-item{
-    font-size: 20px;
-    list-style: none;
-}
-.nav-icon-items-con{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 10%;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-right: 55px;
 }
-.nav-icon-items-con i{
+.nav-items-con li{
+    list-style: none;
     font-size: 20px;
-    margin: 10px;
 }
 
-.nav-sm-con{
-    width: 100vw;
-    height: 25px;
-    padding: 0px;
-    display: none;
-}
-.nav-sm-items-con{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-sm-item{
-    list-style: none;
-    font-size: 0.6rem;
-    margin: 3px;
-}
 a{
     text-decoration: none;
     color: #222020;
@@ -67,21 +37,21 @@ a{
     flex-direction: column;
     justify-content: center;
 }
-.card-con{
-    background-color: rgba(230, 122, 160, 0.7);
+.text-card-con{
+    background-color: rgba(230, 122, 160,0.6);
     width: 450px;
     max-height: 200px;
     padding: 30px;
     margin-left: 50px;
 }
-.card-con h1{
+.text-card-con h1{
     color: #ffffff;
     font-family: Roboto;
     font-weight: bold;
     font-size: 38px;
     margin: 3px;
 }
-.card-con p{
+.text-card-con p{
     color: #ffffff;
     font-family: Roboto;
     font-size: 16px;
@@ -91,7 +61,7 @@ a{
 }
 .order-page{
     background-image: linear-gradient(to right,#ff6984,#fb6f90,#fbc02d);
-    height: 100vh;
+    min-height: 100vh;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -106,6 +76,8 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 85%;
+    flex-wrap: wrap;
 }
 .card{
     width: 300px;
@@ -183,12 +155,16 @@ a{
         flex-direction: column;
         align-items: center;
     }
-    .nav-sm-con{
-        display: block;
-    }
     .nav-con{
-        display: none;
+        height: 3vh;
     }
+    .nav-items-con{
+        gap: 15px;
+    }
+    .nav-items-con li{
+        font-size: 12px;
+    }
+    
 }
 @media (max-width:768px){
     .bg-con{
@@ -225,10 +201,10 @@ a{
         flex-wrap: wrap;
         align-items: center;
     }
-    .nav-sm-con{
-        display: block;
+    .nav-items-con li{
+        font-size: 12px;
     }
     .nav-con{
-        display: none;
+        height: 3vh;
     }
 }
